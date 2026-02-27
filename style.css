@@ -1,0 +1,181 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    background:linear-gradient(to right,#eef2f7,#ffffff);
+     background: url("images/satellite-dishes-195132_640.jpg");
+}
+
+/* HEADER */
+header{
+    background:linear-gradient(90deg,#004aad,#007bff);
+    padding:15px 0;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+nav{
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav h1{
+    color:white;
+    font-size:24px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#ffd700;
+}
+
+/* SLIDER */
+.slider{
+    height:85vh;
+    position:relative;
+    overflow:hidden;
+}
+
+.slide{
+    position:absolute;
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:45px;
+    font-weight:bold;
+    color:white;
+    background:linear-gradient(45deg,#007bff,#00c6ff);
+    opacity:0;
+    transition:1s;
+}
+
+.slide:nth-child(2){
+    background:linear-gradient(45deg,#005bea,#3c8ce7);
+}
+
+.slide:nth-child(3){
+    background:linear-gradient(45deg,#00b09b,#96c93d);
+}
+
+.slide.active{
+    opacity:1;
+}
+
+/* CONTAINER */
+.container{
+    width:90%;
+    margin:60px auto;
+}
+
+/* CARDS */
+.cards{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:white;
+    width:30%;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+    text-align:center;
+    margin-bottom:25px;
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 12px 35px rgba(0,0,0,0.15);
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:#004aad;
+}
+
+/* BUTTON */
+.btn{
+    display:inline-block;
+    padding:12px 28px;
+    background:linear-gradient(90deg,#004aad,#007bff);
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:30px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:linear-gradient(90deg,#007bff,#00c6ff);
+    transform:scale(1.05);
+}
+
+/* FORM */
+form{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+}
+
+form input, form select{
+    width:100%;
+    padding:14px;
+    margin:12px 0;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+/* FOOTER */
+footer{
+    background:linear-gradient(90deg,#004aad,#007bff);
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:60px;
+}
+
+/* ANIMATION */
+h2{
+    animation:fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(20px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+/* MOBILE */
+@media(max-width:768px){
+    .cards{
+        flex-direction:column;
+    }
+    .card{
+        width:100%;
+    }
+}

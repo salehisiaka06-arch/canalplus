@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Commande</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+<header>
+<nav>
+    <h1>Canal+ Shop</h1>
+    <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="offres.html">Offres</a></li>
+        <li><a href="commande.html">Commande</a></li>
+        <li><a href="apropos.html">A propos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+</header>
+
+<div class="container">
+    <h2>Formulaire de Commande</h2>
+
+   <form onsubmit="return traiterCommande()">
+    <input type="text" id="nom" placeholder="Votre nom" required>
+    <input type="tel" id="telephone" placeholder="Téléphone" required>
+
+    <select id="offre" required>
+        <option value="">Choisir une offre</option>
+        <option value="10">Canal+ Access - 10$</option>
+        <option value="20">Canal+ Evasion - 20$</option>
+        <option value="35">Canal+ Tout Canal - 35$</option>
+    </select>
+
+    <select id="paiement" required>
+        <option value="">Mode de paiement</option>
+        <option>Orange money</option>
+        <option>M-pesa</option>
+        <option>Airtel money</option>
+        <option>Carte Bancaire</option>
+    </select>
+
+    <input type="submit" value="Payer Maintenant" class="btn">
+</form>
+<footer>
+    © 2026 Canal+ Shop - Tous droits réservés
+</footer>
+
+</body>
+</html>
