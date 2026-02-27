@@ -7,7 +7,7 @@
 
 body{
     background:linear-gradient(to right,#eef2f7,#ffffff);
-     background: url("images/satellite-dishes-195132_640.jpg");
+     background: url("satellite-dishes-195132_640.jpg");
 }
 
 /* HEADER */
@@ -178,4 +178,5 @@ h2{
     .card{
         width:100%;
     }
+
 }
